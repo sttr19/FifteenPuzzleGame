@@ -1,0 +1,132 @@
+@import "../gem-puzzle/normalize.scss";
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+html {
+	font-family: serif;
+	font-size: 10px;
+  }
+
+.wrapper {
+	max-width: 1280px;
+	padding: 0 20vw;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.gem-area {
+	width: 100%;
+	//height: 100vh;
+	background: plum;
+	position: relative;
+	padding-bottom: 100%;
+	margin-bottom: 1%;
+}
+
+/*.cells {
+	margin-bottom: 30px;
+}*/
+
+.cell-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;  
+	//border: none;
+	border-radius: 25%;
+	border: solid 1px rgb(184, 216, 19);
+	cursor: pointer;
+	transition: transform 1s;
+
+	&_3 {
+		width: calc(100%/3);
+		height: calc(100%/3); 
+	}
+
+	&_4 {
+		width: calc(100%/4);
+		height: calc(100%/4); 
+	}
+
+
+	&_5 {
+		width: calc(100%/5);
+		height: calc(100%/5); 
+	}
+
+	&_6 {
+		width: calc(100%/6);
+		height: calc(100%/6); 
+	}
+	&_7 {
+		width: calc(100%/7);
+		height: calc(100%/7); 
+	}
+
+	&_8 {
+		width: calc(100%/8);   
+		height: calc(100%/8); 
+	}
+}
+
+.modes {
+	display: flex;
+	justify-content: center;
+	gap: 5%;
+}
+
+.sound-modes {
+	display: flex;
+	justify-content: center;
+	gap: 5%;
+	margin-bottom: 2rem;
+	margin-top:  1rem;
+}
+
+p{
+	font-size: 2rem;
+	color: red;
+}
+
+.sound-text{
+	font-size: 1.5rem;
+	color: royalblue;
+	margin-top: 1rem;
+}
+
+h3{
+	font-size: 3rem;
+	color: coral;
+}
+
+.shuffle-btn {
+	border: none;
+	border-radius: 25px;
+	//padding: 0.5rem 2rem;
+	font-size: 2rem;
+	cursor: pointer;
+	color:blue;
+	margin-right: 1rem;
+	width: 35%;
+	height: 3rem;
+	background: yellowgreen;
+  }
+
+  .result-btn {
+	border: none;
+	border-radius: 25px;
+	//padding: 0.5rem 2rem;
+	font-size: 2rem;
+	cursor: pointer;
+	color:rgb(20, 17, 19);
+	//margin-right: 1rem;
+	width: 35%;
+	height: 3rem;
+	background: rgb(37, 154, 213);  
+  }
